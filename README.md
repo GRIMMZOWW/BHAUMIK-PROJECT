@@ -4,6 +4,8 @@ This project is a visually appealing and responsive React-based online portfolio
 
 ## 🚀 Overview
 
+**Live Demo**: [https://bhaumik-project.vercel.app/](https://bhaumik-project.vercel.app/)
+
 The portfolio is designed as a single-page application (SPA) that reflects a personal "Studio" aesthetic—minimal, professional, and accessible. It serves as a comprehensive showcase of technical skills and past work.
 
 ## 🛠️ Tech Stack & Features
