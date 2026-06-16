@@ -8,18 +8,18 @@ const Skills = lazy(() => import('./components/Skills'));
 const Resume = lazy(() => import('./components/Resume'));
 const Contact = lazy(() => import('./components/Contact'));
 
-// Loading fallback component
+// Loading fallback component matching the YC theme
 const Loader = () => (
   <div style={{ 
     height: '100vh', 
     display: 'flex', 
     justifyContent: 'center', 
     alignItems: 'center',
-    background: '#fff',
-    color: '#111',
-    fontFamily: 'Instrument Serif, serif'
+    background: '#faf8f0',
+    color: '#ff6600',
+    fontFamily: 'system-ui, sans-serif'
   }}>
-    <div style={{ fontSize: '2rem', fontStyle: 'italic' }}>Loading...</div>
+    <div style={{ fontSize: '1.5rem', fontWeight: '800' }}>B</div>
   </div>
 );
 
@@ -36,14 +36,19 @@ function App() {
       </Suspense>
       
       <footer style={{ 
-        padding: '60px 10%', 
-        color: '#888',
-        fontSize: '0.8rem',
+        padding: '50px 40px', 
+        borderTop: '1px solid var(--yc-border)',
         textAlign: 'center',
-        textTransform: 'uppercase',
-        letterSpacing: '1px'
+        fontSize: '0.85rem',
+        color: 'var(--text-yc-muted)',
+        fontFamily: 'var(--font-sans)'
       }}>
-        &copy; {new Date().getFullYear()} Bhaumik Shivmath &mdash; B.Tech Student
+        <div style={{ marginBottom: '10px' }}>
+          &copy; {new Date().getFullYear()} Bhaumik Shivmath &bull; B.Tech Student &bull; Full Stack Developer
+        </div>
+        <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>
+          Inspired by Y Combinator. Built using React and Vite.
+        </div>
       </footer>
     </div>
   );

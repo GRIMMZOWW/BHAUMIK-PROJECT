@@ -2,32 +2,42 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact" style={{ textAlign: 'center' }}>
-      <div className="section-title">05 / Contact</div>
-      <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '4.5rem', fontWeight: '400', lineHeight: 1 }}>
-        Let's connect.
-      </h2>
-      
-      <div style={{ marginTop: '40px' }}>
-        <a href="mailto:bhaumik3553@gmail.com" style={{ color: 'var(--accent)', fontSize: '1.8rem', fontWeight: '700', textDecoration: 'none' }}>
-          bhaumik3553@gmail.com
-        </a>
-        <div style={{ marginTop: '20px', fontSize: '1.2rem', fontWeight: '500' }}>
-          +91 70198 39381
+    <section id="contact">
+      <div className="section-label">contact</div>
+      <div className="yc-card">
+        <h2>Let's connect</h2>
+        <p>
+          I am currently seeking junior developer roles or internship opportunities. Feel free to reach out directly through any of the channels below.
+        </p>
+        
+        <div className="contact-table">
+          <div className="contact-row-item">
+            <span className="contact-lbl">Email</span>
+            <span className="contact-val">
+              <a href="mailto:bhaumik3553@gmail.com">bhaumik3553@gmail.com</a>
+            </span>
+          </div>
+          <div className="contact-row-item">
+            <span className="contact-lbl">Phone</span>
+            <span className="contact-val">+91 70198 39381</span>
+          </div>
+          <div className="contact-row-item">
+            <span className="contact-lbl">Location</span>
+            <span className="contact-val">Mumbai, Sion</span>
+          </div>
+          <div className="contact-row-item">
+            <span className="contact-lbl">Github</span>
+            <span className="contact-val">
+              <a href="https://github.com/GRIMMZOWW" target="_blank" rel="noopener noreferrer">
+                github.com/GRIMMZOWW
+              </a>
+            </span>
+          </div>
         </div>
-        <div style={{ marginTop: '10px', color: '#666' }}>
-          Mumbai, Sion
-        </div>
-      </div>
 
-      <div style={{ marginTop: '50px' }}>
-        <a href="https://github.com/GRIMMZOWW" target="_blank" rel="noreferrer" className="btn-main">
-          GitHub Profile
+        <a href="mailto:bhaumik3553@gmail.com" className="btn-pill-orange">
+          Send Email Direct
         </a>
-      </div>
-
-      <div style={{ marginTop: '60px', fontSize: '0.8rem', opacity: 0.4, textTransform: 'uppercase' }}>
-        Currently seeking opportunities for growth.
       </div>
     </section>
   );

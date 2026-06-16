@@ -2,21 +2,20 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="hero">
-      <div className="section-title">01 / Profile</div>
-      <h1>
-        Bhaumik Shivmath <br />
-        <i>is building the web.</i>
+    <section id="about" className="hero-center">
+      <h1 className="hero-title-serif">
+        Bhaumik turns ideas <br />
+        into <i>formidable applications</i><sup>[1]</sup>
       </h1>
-      <p>
-        I'm a B.Tech student currently diving deep into the world of Full Stack Development. 
-        I enjoy turning complex problems into simple, beautiful, and intuitive designs.
-      </p>
-      <div style={{ marginTop: '40px' }}>
-        <a href="#projects" style={{ fontWeight: '700', borderBottom: '2px solid var(--accent)', paddingBottom: '5px' }}>
-          Explore my journey &rarr;
-        </a>
+      
+      <div className="hero-footnote">
+        [1] "A formidable application is one that is fast, responsive, and robust, regardless of whatever engineering obstacles are in the way."
+        <span className="footnote-author">— Bhaumik Shivmath</span>
       </div>
+
+      <a href="#projects" className="scroll-arrow" title="Scroll to Projects">
+        ▾
+      </a>
     </section>
   );
 };

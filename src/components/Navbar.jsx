@@ -2,16 +2,27 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="logo" style={{ textTransform: 'uppercase' }}>Bhaumik S.</div>
-      <ul className="nav-links">
-        <li><a href="#about">Profile</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#skills">Tools</a></li>
-        <li><a href="#resume">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div className="nav-container">
+        <div className="nav-col-left">
+          <a href="#about" className="nav-link">About</a>
+          <a href="#projects" className="nav-link">Projects</a>
+          <a href="#skills" className="nav-link">Skills</a>
+        </div>
+        
+        <div className="nav-col-center">
+          <a href="#about" className="yc-logo-box">B</a>
+        </div>
+        
+        <div className="nav-col-right">
+          <a href="#resume" className="nav-link">Resume</a>
+          <a href="#contact" className="nav-link">Contact</a>
+          <a href="https://github.com/GRIMMZOWW" target="_blank" rel="noopener noreferrer" className="btn-pill-black">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </header>
   );
 };
 

@@ -1,25 +1,25 @@
 import React from 'react';
 
 const myTech = [
-  { cat: "Languages", items: "JavaScript, Python, HTML5, CSS3" },
-  { cat: "Frameworks", items: "React.js" },
-  { cat: "Version Control", items: "Git & GitHub" }
+  { cat: "Languages", items: "React, JavaScript, Python, Git" },
+  { cat: "Core Stack", items: "HTML5, CSS3, Modern ES6+ JavaScript" },
+  { cat: "Tooling", items: "Vite, npm, GitHub, Terminal Command Line" }
 ];
 
 const Skills = () => {
   return (
     <section id="skills">
-      <div className="section-title">03 / Tools</div>
-      <div className="skills-grid">
+      <div className="section-label">skills</div>
+      <div className="spec-sheet">
         {myTech.map((t, i) => (
-          <div key={i} className="skill-box">
-            <span>{t.cat}</span>
-            {t.items}
+          <div key={i} className="spec-row">
+            <div className="spec-category">{t.cat}</div>
+            <div className="spec-list">{t.items}</div>
           </div>
         ))}
       </div>
-      <p style={{ marginTop: '30px', color: '#888', fontSize: '0.9rem' }}>
-        Currently learning Full Stack Development to expand my engineering capabilities.
+      <p style={{ marginTop: '40px', color: 'var(--text-yc-muted)', fontSize: '0.85rem', fontFamily: 'var(--font-mono)' }}>
+        // Currently expanding Full Stack Development capabilities.
       </p>
     </section>
   );
