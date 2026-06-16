@@ -55,10 +55,11 @@ header {
 
 @media (max-width: 768px) {
   .nav-container {
-    /* On mobile: just logo + hamburger side by side */
-    grid-template-columns: 1fr auto;
+    /* On mobile: Flex layout to center logo, absolute position hamburger */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px 20px;
-    gap: 0;
   }
 }
 
@@ -88,8 +89,8 @@ header {
     display: none;
   }
   .nav-col-center {
-    /* Place logo on the left on mobile */
-    justify-content: flex-start;
+    /* Center logo on mobile */
+    justify-content: center;
   }
 }
 
@@ -115,6 +116,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 20px;
   }
 }
 
