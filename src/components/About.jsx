@@ -9,7 +9,7 @@ const About = () => {
       </h1>
       
       <div className="hero-footnote">
-        "First make it live, and you can make it beautiful later."
+        "First, bring the code to life; visual elegance and structural perfection are crafted through continuous iteration."
         <span className="footnote-author">— Bhaumik Shivmath</span>
       </div>
 
