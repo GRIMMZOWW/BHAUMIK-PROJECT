@@ -66,8 +66,8 @@ header {
 .nav-col-left {
   display: flex;
   justify-content: flex-end;
-  gap: 24px;
-  padding-right: 16px;
+  gap: 36px;
+  padding-right: 36px;
 }
 
 .nav-col-center {
@@ -79,8 +79,8 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 24px;
-  padding-left: 16px;
+  gap: 36px;
+  padding-left: 36px;
 }
 
 /* Hide desktop nav columns on mobile */

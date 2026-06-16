@@ -10,7 +10,6 @@ const Navbar = () => {
       <div className="nav-container">
         {/* LEFT: nav links (desktop only) */}
         <div className="nav-col-left">
-          <a href="#about" className="nav-link">About</a>
           <a href="#projects" className="nav-link">Projects</a>
           <a href="#skills" className="nav-link">Skills</a>
         </div>
@@ -29,6 +28,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-pill-black"
+            style={{ marginLeft: 'auto' }}
           >
             GitHub
           </a>
@@ -47,7 +47,6 @@ const Navbar = () => {
       {/* MOBILE DROPDOWN MENU */}
       {menuOpen && (
         <div className="mobile-menu">
-          <a href="#about" className="mobile-link" onClick={closeMenu}>About</a>
           <a href="#projects" className="mobile-link" onClick={closeMenu}>Projects</a>
           <a href="#skills" className="mobile-link" onClick={closeMenu}>Skills</a>
           <a href="#resume" className="mobile-link" onClick={closeMenu}>Resume</a>
