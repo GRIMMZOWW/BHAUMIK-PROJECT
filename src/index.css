@@ -46,30 +46,25 @@ header {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 14px 40px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .nav-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 15px 20px;
-    text-align: center;
+    /* On mobile: just logo + hamburger side by side */
+    grid-template-columns: 1fr auto;
+    padding: 12px 20px;
+    gap: 0;
   }
 }
 
 .nav-col-left {
   display: flex;
   gap: 24px;
-}
-
-@media (max-width: 768px) {
-  .nav-col-left {
-    justify-content: center;
-  }
 }
 
 .nav-col-center {
@@ -84,10 +79,83 @@ header {
   gap: 24px;
 }
 
+/* Hide desktop nav columns on mobile */
 @media (max-width: 768px) {
+  .nav-col-left {
+    display: none;
+  }
   .nav-col-right {
+    display: none;
+  }
+  .nav-col-center {
+    /* Place logo on the left on mobile */
+    justify-content: flex-start;
+  }
+}
+
+/* Hamburger button — hidden on desktop */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: var(--text-yc-dark);
+  padding: 4px 8px;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+
+.hamburger-btn:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
+}
+
+/* Mobile dropdown menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-yc-cream);
+  border-top: 1px solid var(--yc-border);
+  border-bottom: 1px solid var(--yc-border);
+  padding: 10px 0;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-link {
+  padding: 14px 24px;
+  text-decoration: none;
+  color: var(--text-yc-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  border-bottom: 1px solid var(--yc-border);
+  transition: background-color 0.15s;
+}
+
+.mobile-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-link:hover {
+  background-color: rgba(255, 102, 0, 0.05);
+}
+
+.mobile-link-github {
+  color: var(--yc-orange);
+  font-weight: 700;
 }
 
 /* Center YC Logo style but with 'B' */
@@ -426,4 +494,132 @@ section {
 .btn-pill-outline:hover {
   border-color: var(--text-yc-dark);
   background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* ================================================
+   MOBILE RESPONSIVE — 768px and below
+   Matching Y Combinator mobile layout behaviour
+   ================================================ */
+
+@media (max-width: 768px) {
+
+  /* Sections */
+  section {
+    padding: 50px 20px;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    margin-bottom: 24px;
+  }
+
+  /* Hero */
+  .hero-center {
+    min-height: calc(100vh - 60px);
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-title-serif {
+    font-size: clamp(1.7rem, 7vw, 2.8rem);
+    letter-spacing: -0.3px;
+    line-height: 1.3;
+  }
+
+  .hero-footnote {
+    font-size: 0.9rem;
+    margin-top: 36px;
+    padding: 0 8px;
+  }
+
+  .scroll-arrow {
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    gap: 16px;
+  }
+
+  .project-card {
+    padding: 20px 18px;
+  }
+
+  .project-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .project-card-title {
+    font-size: 1.1rem;
+  }
+
+  .project-card-tech {
+    font-size: 0.7rem;
+  }
+
+  .project-card-desc {
+    font-size: 0.88rem;
+    margin-top: 10px;
+  }
+
+  /* Skills */
+  .spec-sheet {
+    width: 100%;
+  }
+
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 14px 0;
+  }
+
+  .spec-category {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+
+  .spec-list {
+    font-size: 0.9rem;
+  }
+
+  /* Resume & Contact Cards */
+  .yc-card {
+    padding: 24px 18px;
+  }
+
+  .yc-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .yc-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Contact rows */
+  .contact-row-item {
+    grid-template-columns: 80px 1fr;
+    font-size: 0.9rem;
+  }
+
+  .contact-lbl {
+    font-size: 0.68rem;
+  }
+
+  .contact-val {
+    font-size: 0.88rem;
+    word-break: break-all;
+  }
+
+  /* Buttons */
+  .btn-pill-orange,
+  .btn-pill-outline,
+  .btn-pill-black {
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
 }
