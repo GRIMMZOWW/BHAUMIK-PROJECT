@@ -65,7 +65,9 @@ header {
 
 .nav-col-left {
   display: flex;
+  justify-content: flex-end;
   gap: 24px;
+  padding-right: 16px;
 }
 
 .nav-col-center {
@@ -75,9 +77,10 @@ header {
 
 .nav-col-right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   gap: 24px;
+  padding-left: 16px;
 }
 
 /* Hide desktop nav columns on mobile */
@@ -171,8 +174,8 @@ header {
   justify-content: center;
   align-items: center;
   font-family: var(--font-sans);
-  font-weight: 800;
-  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.8rem;
   text-decoration: none;
   line-height: 1;
   transition: background-color 0.2s;
