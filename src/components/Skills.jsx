@@ -1,9 +1,12 @@
 import React from 'react';
 
 const myTech = [
-  { cat: "Languages", items: "React, JavaScript, Python, Git" },
-  { cat: "Core Stack", items: "HTML5, CSS3, Modern ES6+ JavaScript" },
-  { cat: "Tooling", items: "Vite, npm, GitHub, Terminal Command Line" }
+  { cat: "Web Technologies", items: "HTML, CSS, Bootstrap, JavaScript" },
+  { cat: "Frontend Framework", items: "React.js" },
+  { cat: "Database Systems", items: "MySQL (Joins, Subqueries, Views, Indexes, Stored Procedures, Triggers, Transactions)" },
+  { cat: "Version Control & Hosting", items: "Git, GitHub, Vercel" },
+  { cat: "Programming Basics", items: "Python" },
+  { cat: "Currently Learning", items: "Java, Spring Boot, Full Stack Web Development, Next.js, TypeScript" }
 ];
 
 const Skills = () => {
@@ -19,7 +22,7 @@ const Skills = () => {
         ))}
       </div>
       <p style={{ marginTop: '40px', color: 'var(--text-yc-muted)', fontSize: '0.85rem', fontFamily: 'var(--font-mono)' }}>
-        // Currently expanding Full Stack Development capabilities.
+        // Actively upskilling through certified training and real-world projects.
       </p>
     </section>
   );

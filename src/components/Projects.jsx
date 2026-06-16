@@ -3,24 +3,24 @@ import React from 'react';
 const projectList = [
   {
     id: "1",
-    title: "Weather Dashboard",
-    tech: "React / OpenWeather API",
-    desc: "A functional weather application that fetches and displays real-time weather data for cities globally. It features clean state management, responsive layouts, and smooth asynchronous API integrations.",
-    link: "https://github.com/GRIMMZOWW/BHAUMIK-PROJECT"
+    title: "FixIt — Mobile Repair Service Website",
+    tech: "HTML, CSS, Bootstrap, JavaScript",
+    desc: "Built a fully responsive, multi-page website for a mobile repair business from scratch. Designed Home, About, Services, Gallery, and Contact sections with comprehensive mobile, tablet, and desktop compatibility.",
+    link: "https://github.com/GRIMMZOWW"
   },
   {
     id: "2",
-    title: "Smart Task Manager",
-    tech: "JavaScript / Local Storage",
-    desc: "A client-side CRUD task application. Users can add, filter, complete, and delete tasks with state persistent storage through local storage web APIs.",
-    link: "https://github.com/GRIMMZOWW/BHAUMIK-PROJECT"
+    title: "Personal Portfolio Website",
+    tech: "HTML, CSS, JavaScript, React",
+    desc: "Designed and deployed a personal developer portfolio featuring a live Weather Dashboard (fetching global city data via OpenWeather API) and a Smart Task Manager (CRUD application using browser Local Storage).",
+    link: "https://bhaumik-project.vercel.app/"
   },
   {
     id: "3",
-    title: "Python Data Script",
-    tech: "Python / Pandas",
-    desc: "An automated data processing script developed using Python and Pandas. Used for cleaning, structuring, and preparing raw academic datasets for computational research.",
-    link: "https://github.com/GRIMMZOWW/BHAUMIK-PROJECT"
+    title: "StreamFlix — Movie Streaming Database System",
+    tech: "MySQL / Relational Database Design",
+    desc: "Designed and implemented a fully normalized relational database for a movie streaming service, modeling users, subscriptions, catalogs, and payments. Applied stored procedures, triggers, views, indexes, and multi-table joins.",
+    link: "https://github.com/GRIMMZOWW"
   }
 ];
 

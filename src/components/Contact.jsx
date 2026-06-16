@@ -19,17 +19,25 @@ const Contact = () => {
           </div>
           <div className="contact-row-item">
             <span className="contact-lbl">Phone</span>
-            <span className="contact-val">+91 70198 39381</span>
+            <span className="contact-val">+91 9867965708</span>
           </div>
           <div className="contact-row-item">
             <span className="contact-lbl">Location</span>
-            <span className="contact-val">Mumbai, Sion</span>
+            <span className="contact-val">Mumbai, India</span>
           </div>
           <div className="contact-row-item">
             <span className="contact-lbl">Github</span>
             <span className="contact-val">
               <a href="https://github.com/GRIMMZOWW" target="_blank" rel="noopener noreferrer">
                 github.com/GRIMMZOWW
+              </a>
+            </span>
+          </div>
+          <div className="contact-row-item">
+            <span className="contact-lbl">LinkedIn</span>
+            <span className="contact-val">
+              <a href="https://linkedin.com/in/the-bhaumik-172b893b6" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/the-bhaumik-172b893b6
               </a>
             </span>
           </div>
