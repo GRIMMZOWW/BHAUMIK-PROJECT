@@ -9,7 +9,9 @@ const Resume = () => {
         
         <div className="contact-table" style={{ marginBottom: '30px' }}>
           <div className="contact-row-item" style={{ gridTemplateColumns: '150px 1fr' }}>
-            <span className="contact-lbl">ITVedant</span>
+            <span className="contact-lbl">
+              <a href="https://itvedant.com/?ref=googleitvedantdadar" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Itvedant Education Pvt Ltd - Dadar</a>
+            </span>
             <span className="contact-val">Currently pursuing Fullstack Development in Java</span>
           </div>
         </div>
