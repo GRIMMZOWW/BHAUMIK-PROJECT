@@ -1,12 +1,12 @@
 import React from 'react';
 
 const myTech = [
-  { cat: "Web Technologies", items: "HTML, CSS, Bootstrap, JavaScript" },
+  { cat: "Backend & API", items: "Java 21, Spring Boot, Spring Security, REST APIs, MySQL" },
   { cat: "Frontend Framework", items: "React.js" },
-  { cat: "Database Systems", items: "MySQL (Joins, Subqueries, Views, Indexes, Stored Procedures, Triggers, Transactions)" },
+  { cat: "Web Technologies", items: "HTML, CSS, Bootstrap, JavaScript" },
   { cat: "Version Control & Hosting", items: "Git, GitHub, Vercel" },
-  { cat: "Programming Basics", items: "Python" },
-  { cat: "Currently Learning", items: "Java, Spring Boot, Full Stack Web Development, Next.js, TypeScript" }
+  { cat: "Programming Basics", items: "Python, SQL" },
+  { cat: "Currently Learning", items: "Full Stack Web Development, Spring Boot" }
 ];
 
 const Skills = () => {

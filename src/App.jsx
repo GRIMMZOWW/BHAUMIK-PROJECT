@@ -44,7 +44,7 @@ function App() {
         fontFamily: 'var(--font-sans)'
       }}>
         <div style={{ marginBottom: '10px' }}>
-          &copy; {new Date().getFullYear()} Bhaumik Shivmath &bull; B.Tech Student &bull; Full Stack Developer
+          &copy; {new Date().getFullYear()} Bhaumik Shivmath &bull; Full Stack Developer
         </div>
         <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>
           Inspired by Y Combinator. Built using React and Vite.

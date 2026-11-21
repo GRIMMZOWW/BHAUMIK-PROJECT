@@ -347,6 +347,61 @@ section {
   gap: 10px;
 }
 
+.project-card-header-col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-badge-link {
+  font-size: 0.78rem;
+  color: var(--yc-orange);
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--yc-border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: var(--bg-yc-cream);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.project-badge-link:hover {
+  border-color: var(--yc-orange);
+  background-color: rgba(255, 102, 0, 0.08);
+}
+
+.project-badge-live {
+  color: var(--text-yc-dark);
+}
+
+.resume-subheading {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: var(--text-yc-dark);
+}
+
+.resume-row-item {
+  grid-template-columns: 180px 1fr;
+  gap: 12px;
+}
+
 .project-card-title {
   font-family: var(--font-sans);
   font-size: 1.3rem;
@@ -608,6 +663,11 @@ section {
   .contact-row-item {
     grid-template-columns: 80px 1fr;
     font-size: 0.9rem;
+  }
+
+  .resume-row-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .contact-lbl {
