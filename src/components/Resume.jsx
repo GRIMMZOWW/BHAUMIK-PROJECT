@@ -42,7 +42,7 @@ const Resume = () => {
           ))}
         </div>
 
-        <a href="/resume.pdf" download className="btn-pill-orange">
+        <a href="/BHAUMIK_SHIVMATH_V1.pdf" download="Bhaumik_Shivmath_Resume.pdf" className="btn-pill-orange">
           Download Resume (PDF)
         </a>
       </div>
