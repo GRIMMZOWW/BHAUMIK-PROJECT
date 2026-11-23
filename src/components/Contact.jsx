@@ -10,7 +10,7 @@ const Contact = () => {
           Currently working as a MERN Stack Intern at ZA Charity Feed Foundation and open to full-time junior developer roles or collaborative projects. Feel free to reach out directly through any of the channels below.
         </p>
         
-        <div className="contact-table">
+        <div className="contact-table" style={{ marginBottom: 0 }}>
           <div className="contact-row-item">
             <span className="contact-lbl">Email</span>
             <span className="contact-val">
@@ -42,10 +42,6 @@ const Contact = () => {
             </span>
           </div>
         </div>
-
-        <a href="mailto:bhaumik3553@gmail.com" className="btn-pill-orange">
-          Send Email Direct
-        </a>
       </div>
     </section>
   );
