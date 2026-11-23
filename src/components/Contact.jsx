@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="yc-card">
         <h2>Let's connect</h2>
         <p>
-          I am currently seeking junior developer roles or internship opportunities. Feel free to reach out directly through any of the channels below.
+          Currently working as a MERN Stack Intern at ZA Charity Feed Foundation and open to full-time junior developer roles or collaborative projects. Feel free to reach out directly through any of the channels below.
         </p>
         
         <div className="contact-table">

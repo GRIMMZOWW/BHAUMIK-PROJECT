@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 
 // Lazy loading components
 const About = lazy(() => import('./components/About'));
+const Experience = lazy(() => import('./components/Experience'));
 const Projects = lazy(() => import('./components/Projects'));
 const Skills = lazy(() => import('./components/Skills'));
 const Resume = lazy(() => import('./components/Resume'));
@@ -29,6 +30,7 @@ function App() {
       <Navbar />
       <Suspense fallback={<Loader />}>
         <About />
+        <Experience />
         <Projects />
         <Skills />
         <Resume />

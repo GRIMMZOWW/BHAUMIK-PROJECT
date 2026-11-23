@@ -402,6 +402,25 @@ section {
   gap: 12px;
 }
 
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.exp-role {
+  margin-bottom: 4px !important;
+}
+
+.exp-org {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--yc-orange);
+}
+
 .project-card-title {
   font-family: var(--font-sans);
   font-size: 1.3rem;

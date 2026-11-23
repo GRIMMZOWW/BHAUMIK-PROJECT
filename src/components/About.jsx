@@ -13,7 +13,7 @@ const About = () => {
         <span className="footnote-author">— Bhaumik Shivmath</span>
       </div>
 
-      <a href="#projects" className="scroll-arrow" title="Scroll to Projects">
+      <a href="#experience" className="scroll-arrow" title="Scroll to Experience">
         ▾
       </a>
     </section>

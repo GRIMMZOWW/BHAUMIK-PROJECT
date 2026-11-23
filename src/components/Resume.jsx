@@ -12,7 +12,7 @@ const Resume = () => {
     <section id="resume">
       <div className="section-label">resume</div>
       <div className="yc-card">
-        <h2>Current Education</h2>
+        <h2>Training &amp; Education</h2>
 
         <div className="contact-table" style={{ marginBottom: '30px' }}>
           <div className="contact-row-item resume-row-item">
@@ -26,7 +26,9 @@ const Resume = () => {
                 Itvedant Education Pvt Ltd - Dadar
               </a>
             </span>
-            <span className="contact-val">Currently pursuing Fullstack Development in Java</span>
+            <span className="contact-val">
+              Completed 6-month regular Full Stack Java training &bull; Currently attending weekend sessions
+            </span>
           </div>
         </div>
 
