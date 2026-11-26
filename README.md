@@ -20,7 +20,7 @@ The portfolio is designed as a single-page application (SPA) that reflects a per
 
 ```text
 ├── public/
-│   └── resume.pdf       # Professional resume (static PDF)
+│   └── BHAUMIK-V3.pdf   # Professional resume (static PDF)
 ├── src/
 │   ├── components/      # Modular React components
 │   │   ├── About.jsx    # About Me section
