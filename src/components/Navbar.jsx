@@ -19,19 +19,10 @@ const Navbar = () => {
           <a href="#about" className="yc-logo-box">B</a>
         </div>
 
-        {/* RIGHT: links + github pill (desktop only) */}
+        {/* RIGHT: nav links (desktop only) */}
         <div className="nav-col-right">
           <a href="#resume" className="nav-link">Resume</a>
           <a href="#contact" className="nav-link">Contact</a>
-          <a
-            href="https://github.com/GRIMMZOWW"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-pill-black"
-            style={{ marginLeft: 'auto' }}
-          >
-            GitHub
-          </a>
         </div>
 
         {/* HAMBURGER: mobile only */}
@@ -51,15 +42,6 @@ const Navbar = () => {
           <a href="#skills" className="mobile-link" onClick={closeMenu}>Skills</a>
           <a href="#resume" className="mobile-link" onClick={closeMenu}>Resume</a>
           <a href="#contact" className="mobile-link" onClick={closeMenu}>Contact</a>
-          <a
-            href="https://github.com/GRIMMZOWW"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-link mobile-link-github"
-            onClick={closeMenu}
-          >
-            GitHub ↗
-          </a>
         </div>
       )}
     </header>

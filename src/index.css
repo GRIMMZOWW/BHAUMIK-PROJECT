@@ -297,6 +297,12 @@ section {
 }
 
 /* Animated Down Arrow */
+.hero-cta {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
 .scroll-arrow {
   margin-top: 70px;
   color: var(--text-yc-muted);
@@ -305,6 +311,10 @@ section {
   animation: bounce 2s infinite;
   display: inline-block;
   cursor: pointer;
+}
+
+.hero-scroll-arrow {
+  margin-top: 38px;
 }
 
 @keyframes bounce {
@@ -617,6 +627,10 @@ section {
     font-size: 1.2rem;
   }
 
+  .hero-scroll-arrow {
+    margin-top: 32px;
+  }
+
   /* Projects */
   .projects-grid {
     gap: 16px;
@@ -706,5 +720,10 @@ section {
     padding: 10px 20px;
     width: 100%;
     text-align: center;
+  }
+
+  .hero-github-btn {
+    width: auto;
+    padding: 9px 24px;
   }
 }

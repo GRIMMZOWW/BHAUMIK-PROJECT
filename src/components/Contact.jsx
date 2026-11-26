@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
           <div className="contact-row-item">
             <span className="contact-lbl">Location</span>
-            <span className="contact-val">Mumbai, India</span>
+            <span className="contact-val">Sion, Mumbai</span>
           </div>
           <div className="contact-row-item">
             <span className="contact-lbl">Github</span>
@@ -36,8 +36,8 @@ const Contact = () => {
           <div className="contact-row-item">
             <span className="contact-lbl">LinkedIn</span>
             <span className="contact-val">
-              <a href="https://linkedin.com/in/the-bhaumik-172b893b6" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/the-bhaumik-172b893b6
+              <a href="https://www.linkedin.com/in/bhaumik-shivmath-246b69402/" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/bhaumik-shivmath-246b69402
               </a>
             </span>
           </div>
